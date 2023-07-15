@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do WebApp</title>
+  <link rel="icon" type="image/x-icon" href="todo_favicon.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>To-Do WebApp</h1>
+    <div class="contain">
+    <div class="add-task">
+      <input type="text" id="task-input" placeholder="Enter task title">
+      <textarea type="text" id="description-input" placeholder="Enter task description"></textarea>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+  </div>
+
+    <div class="split-container">
+      <div class="task-container">
+        <center><h2 id="pending_task">Pending Tasks</h2></center>
+        <ul id="pending-tasks-list"></ul>
+      </div>
+
+      <div class="task-container">
+        <center><h2 id="Completed_task">Completed Tasks</h2></center>
+        <ul id="completed-tasks-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
